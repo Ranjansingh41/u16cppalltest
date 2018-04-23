@@ -1,11 +1,13 @@
 jobs:
-- name: u16cppall
- type: runSh
-       runtime:
-         options:
-           imageName: "drydock/u16cppall"
-           imageTag: master
-       script:
+- name: u16cppall-test
+  type: runSh
+  steps:
+    - TASK:
+        runtime:
+          options:
+            imageName: "drydock/u16cppall"
+            imageTag: master
+        script:
           - gcc --version
           - autoconf --version
           - automake --version
