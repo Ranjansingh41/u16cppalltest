@@ -1,8 +1,6 @@
 jobs:
 - name: u16cppall
  type: runSh
- steps:
-   - TASK:
        runtime:
          options:
            imageName: "drydock/u16cppall"
