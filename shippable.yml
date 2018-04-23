@@ -1,5 +1,5 @@
 jobs:
-- name: u16cppall-test
+- name: u16cppall
  type: runSh
  steps:
    - TASK:
